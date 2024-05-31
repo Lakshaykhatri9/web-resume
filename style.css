@@ -4,20 +4,22 @@
 .square{
     height: 100px;
     width: 100px;
-    border: 10px solid red;
+    border: 8px solid #ff00004a;
     border-top: 10px solid yellow;
     z-index: -10;
     position: fixed;
     border-radius: 20%;
-    animation: loader 3s infinite ease alternate;
+    animation: loader 3s infinite ease-in-out normal;
 }
 
 @keyframes loader{
     from{
         transform: rotate(0deg);
+        border: 8px solid #ff00004a;
     }
 
     to{
         transform: rotate(360deg);
+        border: 1px solid blue;
     }
 }
